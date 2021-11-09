@@ -30,11 +30,11 @@ func main() {
 	//newInt := seqInt()
 	//fmt.Println("Result:", newInt())
 	//
-	//res := newFunc(sum)
-	//fmt.Println("Result:", res)
-	//
-	//res = newFunc(mult)
-	//fmt.Println("Multiplication Result: ", res)
+	res := newFunc(sum)
+	fmt.Println("Result:", res)
+
+	res = newFunc(mult)
+	fmt.Println("Multiplication Result: ", res)
 }
 
 func newFunc(s func(nums []int) int) int {
