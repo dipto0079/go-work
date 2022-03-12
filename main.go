@@ -30,11 +30,11 @@ func main() {
 	//newInt := seqInt()
 	//fmt.Println("Result:", newInt())
 	//
-	//res := newFunc(sum)
-	//fmt.Println("Result:", res)
-	//
-	//res = newFunc(mult)
-	//fmt.Println("Multiplication Result: ", res)
+	res := newFunc(sum)
+	fmt.Println("Result:", res)
+
+	res = newFunc(mult)
+	fmt.Println("Multiplication Result: ", res)
 }
 
 func newFunc(s func(nums []int) int) int {
@@ -55,7 +55,7 @@ func fact(n int) int {
 		return 1
 	}
 	return n * fact(n-1)
-	//dgdgdstdhfhfhftsarrwtdgcggdgggfg
+
 }
 
 func sum(nums []int) int {
